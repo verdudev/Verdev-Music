@@ -1,8 +1,8 @@
 import asyncio
 import random
 
-from fsub import forcesubs
 from config import UPDATES_CHANNEL
+from Userbot.helpers.fsub import forcesubs
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pyrogram.types import Message
