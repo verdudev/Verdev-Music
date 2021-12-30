@@ -321,7 +321,7 @@ async def videoplay(client, m: Message):
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
 **✧ Mulai Memutar Video
-🏷 Judul: [{songname}]({link})
+🏷 Judul: [{songname}]({url})
 💭 Chat ID: {chat_id}
 🎧 Atas permintaan: {m.from_user.mention}**
 """,
