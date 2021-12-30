@@ -4,7 +4,6 @@ import random
 from config import UPDATES_CHANNEL
 from Userbot.helpers.fsub import forcesubs
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pyrogram.types import Message
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
@@ -101,16 +100,6 @@ async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
     m.chat.title
-    keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data="cls"),
-            ],[
-                InlineKeyboardButton(text="✨ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-            ]
-        ]
-    )
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
@@ -132,9 +121,9 @@ async def play(client, m: Message):
                     photo="https://telegra.ph/file/4cbbed36db6e83e2edeb0.png",
                     caption=f"""
 **✧ Lagu Di Antrian Ke {pos}
-✧ Judul: [{songname}]({link})
-✧ Chat ID: {chat_id}
-✧ Permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                 )
             else:
@@ -152,9 +141,9 @@ async def play(client, m: Message):
                     photo="https://telegra.ph/file/4cbbed36db6e83e2edeb0.png",
                     caption=f"""
 **✧ Mulai Memutar Lagu
-✧ Judul: [{songname}]({link})
-✧ Chat ID: {chat_id}
-✧ Atas Permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                 )
 
@@ -183,9 +172,9 @@ async def play(client, m: Message):
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
 **✧ Lagu Di Antrian Ke {pos}
-✧ Judul: [{songname}]({url})
-✧ Chat ID: {chat_id}
-✧ Atas Permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -204,9 +193,9 @@ async def play(client, m: Message):
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
 **✧ Mulai Memutar Lagu
-✧ Judul: [{songname}]({url})
-✧ Chat ID: {chat_id}
-✧ Atas Permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -252,9 +241,9 @@ async def videoplay(client, m: Message):
                     photo="https://telegra.ph/file/4cbbed36db6e83e2edeb0.png",
                     caption=f"""
 **✧ Video Di Antrian Ke {pos}
-✧ Judul: [{songname}]({link})
-✧ Chat ID: {chat_id}
-✧ Atas Permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                 )
             else:
@@ -276,9 +265,9 @@ async def videoplay(client, m: Message):
                     photo="https://telegra.ph/file/4cbbed36db6e83e2edeb0.png",
                     caption=f"""
 **✧ Mulai Memutar Video
-✧ Judul: [{songname}]({link})
-✧ Chat ID: {chat_id}
-✧ Atas permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                 )
 
@@ -313,9 +302,9 @@ async def videoplay(client, m: Message):
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
 **✧ Video Di Antrian Ke {pos}
-✧ Judul: [{songname}]({url})
-✧ Chat ID: {chat_id}
-✧ Atas Permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -332,9 +321,9 @@ async def videoplay(client, m: Message):
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
 **✧ Mulai Memutar Video
-✧ Judul: [{songname}]({url})
-✧ Chat ID: {chat_id}
-✧ Atas Permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -382,9 +371,9 @@ async def playfrom(client, m: Message):
                         photo="https://telegra.ph/file/4cbbed36db6e83e2edeb0.png",
                         caption=f"""
 **✧ Mulai Memutar Lagu Dari {chat}
-✧ Judul: [{songname}]({link})
-✧ Chat ID: {chat_id}
-✧ Atas Permintaan: {m.from_user.mention}**
+🏷 Judul: [{songname}]({link})
+💭 Chat ID: {chat_id}
+🎧 Atas permintaan: {m.from_user.mention}**
 """,
                     )
             await hmm.delete()
