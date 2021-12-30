@@ -2,6 +2,7 @@ import asyncio
 import random
 
 from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pyrogram.types import Message
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
@@ -97,6 +98,16 @@ async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
     m.chat.title
+    keyboard = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data="cbmenu"),
+                InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data="cls"),
+            ],[
+                InlineKeyboardButton(text="✨ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+            ]
+        ]
+    )
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
