@@ -18,7 +18,6 @@ from pytgcalls import (__version__ as pytover)
 
 @Client.on_message(
     filters.command(["start"], prefixes=f"{HNDLR}"))
-@forcesubs
 async def start(client, m: Message):
       await m.reply(
         f"""✨ **Selamat datang {message.from_user.mention()} !**\n
