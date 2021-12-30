@@ -21,5 +21,5 @@ async def start_(client: Client, message: Message):
 💡 **Temukan semua perintah Bot dan cara kerjanya dengan mengklik tombol» 📚 Perintah!**
 
 🔖 **Semua perintah dapat digunakan dengan: ; **
-
 """,
+)
