@@ -1,7 +1,7 @@
 import asyncio
 import random
 
-from helpers.fsub import forcesubs
+from fsub import forcesubs
 from config import UPDATES_CHANNEL
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
