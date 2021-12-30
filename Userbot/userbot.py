@@ -70,8 +70,8 @@ async def help(client, m: Message):
 🛠 MENU BANTUAN [ʙɪɴᴀʀʏ ᴍᴜsɪᴄ](https://t.me/BinaryUserMusic)
 
 ⚡ PERINTAH UNTUK SEMUA ORANG
-• {HNDLR}play [judul lagu | link youtube | balas file audio] - untuk memutar lagu
-• {HNDLR}vplay [judul video | link youtube | balas file video] - untuk memutar video
+• {HNDLR}play (judul lagu) | untuk memutar lagu
+• {HNDLR}vplay judul video) | untuk memutar video
 • {HNDLR}playlist untuk melihat daftar putar
 • {HNDLR}ping - untuk cek status
 • {HNDLR}id - untuk melihat id pengguna
@@ -80,7 +80,7 @@ async def help(client, m: Message):
 • {HNDLR}help - untuk melihat daftar perintah
 • {HNDLR}join- untuk join | ke grup 
 
-⚡ PERINTAH UNTUK SEMUA ADMIN
+⚡ PERINTAH KHUSUS UNTUK SEMUA ADMIN
 • {HNDLR}resume - untuk melanjutkan pemutaran lagu atau video
 • {HNDLR}pause - untuk untuk menjeda pemutaran lagu atau video
 • {HNDLR}skip - untuk melewati lagu atau video
