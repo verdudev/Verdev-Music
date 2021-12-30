@@ -16,7 +16,7 @@ API_HASH = os.getenv("API_HASH")
 SESSION = os.getenv("SESSION")
 HNDLR = os.getenv("HNDLR", "!")
 SUDO_USERS = list(map(int, os.getenv("SUDO_USERS").split()))
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "ChannelBinary")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "BinarySupport")
 
 # Fsubs #
 FORCESUB = getenv("FORCESUB", "BinarySupport") if getenv("FORCESUB", "BinarySupport") else None
