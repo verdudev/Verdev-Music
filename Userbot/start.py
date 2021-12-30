@@ -8,6 +8,8 @@ from config import (
 from Userbot.helpers.fsub import forcesubs
 from config import HNDLR, bot, call_py
 from pyrogram import Client, filters
+from pyrogram import __version__ as pyrover
+from pytgcalls import (__version__ as pytover)
 
 
 @Client.on_message(
