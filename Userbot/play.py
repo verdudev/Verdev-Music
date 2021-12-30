@@ -172,7 +172,7 @@ async def play(client, m: Message):
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
 **✧ Lagu Di Antrian Ke {pos}
-🏷 Judul: [{songname}]({link})
+🏷 Judul: [{songname}]({url})
 💭 Chat ID: {chat_id}
 🎧 Atas permintaan: {m.from_user.mention}**
 """,
@@ -193,7 +193,7 @@ async def play(client, m: Message):
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
 **✧ Mulai Memutar Lagu
-🏷 Judul: [{songname}]({link})
+🏷 Judul: [{songname}]({url})
 💭 Chat ID: {chat_id}
 🎧 Atas permintaan: {m.from_user.mention}**
 """,
@@ -302,7 +302,7 @@ async def videoplay(client, m: Message):
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
 **✧ Video Di Antrian Ke {pos}
-🏷 Judul: [{songname}]({link})
+🏷 Judul: [{songname}]({url})
 💭 Chat ID: {chat_id}
 🎧 Atas permintaan: {m.from_user.mention}**
 """,
