@@ -20,7 +20,6 @@ def bytes(size: float) -> str:
 
 
 @Client.on_message(filters.command(["speedtest"], prefixes=f"{HNDLR}"))
-await m.delete()
 async def statsguwid(_, m: Message):
     m = await Message.reply_text("Menjalankan Tes Kecepatan ⚡")
     try:
