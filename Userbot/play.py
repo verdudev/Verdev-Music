@@ -1,6 +1,7 @@
 import asyncio
 import random
 
+from helpers.fsub import forcesubs
 from config import UPDATES_CHANNEL
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -95,6 +96,7 @@ async def ytdl(link):
 
 
 @Client.on_message(filters.command(["play"], prefixes=f"{HNDLR}"))
+@forcesubs
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -212,6 +214,7 @@ async def play(client, m: Message):
 
 
 @Client.on_message(filters.command(["videoplay", "vplay"], prefixes=f"{HNDLR}"))
+@forcesubs
 async def videoplay(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -339,6 +342,7 @@ async def videoplay(client, m: Message):
 
 
 @Client.on_message(filters.command(["playfrom"], prefixes=f"{HNDLR}"))
+@forcesubs
 async def playfrom(client, m: Message):
     chat_id = m.chat.id
     if len(m.command) < 2:
@@ -392,6 +396,7 @@ async def playfrom(client, m: Message):
 
 
 @Client.on_message(filters.command(["playlist", "queue"], prefixes=f"{HNDLR}"))
+@forcesubs
 async def playlist(client, m: Message):
     chat_id = m.chat.id
     if chat_id in QUEUE:
