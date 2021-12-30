@@ -67,7 +67,7 @@ async def help(client, m: Message):
     HELP = f"""
 <b>👋 Hallo {m.from_user.mention}!
 
-🛠 MENU BANTUAN MUSIC PLAYER
+🛠 MENU BANTUAN [ʙɪɴᴀʀʏ ᴍᴜsɪᴄ](https://t.me/BinaryUserMusic)
 
 ⚡ PERINTAH UNTUK SEMUA ORANG
 • {HNDLR}play [judul lagu | link youtube | balas file audio] - untuk memutar lagu
