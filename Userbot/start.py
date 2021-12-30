@@ -1,5 +1,6 @@
 from datetime import datetime
 from sys import version_info
+from pyrogram.types import Message
 
 from config import (
     BOT_NAME,
