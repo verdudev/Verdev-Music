@@ -12,9 +12,12 @@ from pyrogram.types import Message
 from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 from config import HNDLR
+# Fsubs
+from Userbot.helpers.fsub import forcesubs
 
 
 @Client.on_message(filters.command(["song", "music"], prefixes=f"{HNDLR}"))
+@forcesubs
 async def song(client, message: Message):
     urlissed = get_text(message)
     if not urlissed:
@@ -229,6 +232,7 @@ def time_to_seconds(time):
 
 
 @Client.on_message(filters.command(["vsong", "video"], prefixes=f"{HNDLR}"))
+@forcesubs
 async def vsong(client, message: Message):
     urlissed = get_text(message)
 
