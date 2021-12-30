@@ -4,6 +4,7 @@ import speedtest
 import wget
 from pyrogram import Client, filters
 from pyrogram.types import Message
+from config import HNDLR, bot, call_py
 
 def bytes(size: float) -> str:
     """Menyesuaikan Kecepatan"""
