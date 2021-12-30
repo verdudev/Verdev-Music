@@ -22,7 +22,7 @@ def forcesubs(func : Callable) -> Callable:
                             ]
                         ]
                 markup = InlineKeyboardMarkup(button)
-                return await m.reply_text(text=f"✨ Halo **{rpk}**\n** Hanya Yang Sudah Subs Channel Binary Music yang dapat menggunakan Bot Music ini 😊**\n"
-                    "\n⬇️ **Klik Button di bawah untuk Join Channel Binary Music** ⬇️__", parse_mode='markdown', reply_markup=markup, quote=True)
+                return await m.reply_text(text=f"✨ **Halo {rpk}**\n** Hanya Yang Sudah Subs Channel Binary Music yang dapat menggunakan Bot Music ini 😊**\n"
+                    "\n⚡ **Klik @BinarySupport Untuk Join Channel Binary Music**__", parse_mode='markdown', reply_markup=markup, quote=True)
             return await func(c, m)
     return wrapper
