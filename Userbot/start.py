@@ -18,13 +18,14 @@ from pytgcalls import (__version__ as pytover)
 
 @Client.on_message(
     filters.command(["start"], prefixes=f"{HNDLR}"))
+@forcesubs
 async def start(client, m: Message):
       await m.reply(
         f"""✨ **Selamat datang {m.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Memungkinkan Anda memutar musik & video di grup melalui obrolan video Telegram!**
+💭 [{ʙɪɴᴀʀʏ ᴍᴜsɪᴄ}](https://t.me/BinaryUserMusic) **Memungkinkan Anda memutar musik & video di grup melalui obrolan video Telegram!**
 
 💡 **Temukan semua perintah Bot dan cara kerjanya dengan mengklik » 📚 [Perintah!](https://t.me/ChannelBinary/38)**
 
-🔖 **Semua perintah dapat digunakan dengan: ; **
+🔖 **Semua perintah dapat digunakan dengan » ; **
 """,
 )
