@@ -18,9 +18,9 @@ HNDLR = os.getenv("HNDLR", "!")
 SUDO_USERS = list(map(int, os.getenv("SUDO_USERS").split()))
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "BinarySupport")
 
-BOT_USERNAME = getenv("BOT_USERNAME", "Thedumoon")
+BOT_USERNAME = getenv("BOT_USERNAME", "BinaryUserMusic")
 OWNER_NAME = getenv("OWNER_NAME", "Pranata_11")
-BOT_NAME = getenv("BOT_NAME", "TheduMoon")
+BOT_NAME = getenv("BOT_NAME", "ʙɪɴᴀʀʏ ᴍᴜsɪᴄ")
 GROUP_SUPPORT = getenv("GROUP_SUPPORT", "BinarySupport")
 
 # Fsubs #
