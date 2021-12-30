@@ -18,13 +18,12 @@ from pytgcalls import (__version__ as pytover)
 @Client.on_message(
     filters.command(["start"], prefixes=f"{HNDLR}"))
 @forcesubs
-async def start_(client: Client, message: Message):
-    await message.reply_text(
+async def start(client, m: Message):
+      await m.reply(
         f"""✨ **Selamat datang {message.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Memungkinkan Anda memutar musik & video di grup melalui obrolan video Telegram!**
 
 💡 **Temukan semua perintah Bot dan cara kerjanya dengan mengklik tombol» 📚 Perintah!**
 
-🔖 **Semua perintah dapat digunakan dengan: ; **
 """,
 )
