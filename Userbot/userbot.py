@@ -33,7 +33,7 @@ async def ping(client, m: Message):
     await m.delete()
     start = time()
     current_time = datetime.utcnow()
-    m_reply = await m.reply_text("🥵")
+    m_reply = await m.reply_text("⚡")
     delta_ping = time() - start
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
@@ -71,7 +71,7 @@ async def help(client, m: Message):
 
 ⚡ PERINTAH UNTUK SEMUA ORANG
 • {HNDLR}play [judul lagu | link youtube | balas file audio] - untuk memutar lagu
-• {HNDLR}videoplay [judul video | link youtube | balas file video] - untuk memutar video
+• {HNDLR}vplay [judul video | link youtube | balas file video] - untuk memutar video
 • {HNDLR}playlist untuk melihat daftar putar
 • {HNDLR}ping - untuk cek status
 • {HNDLR}id - untuk melihat id pengguna
@@ -93,28 +93,9 @@ async def help(client, m: Message):
 async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
-<b>👋 Hallo {m.from_user.mention}!
+<b>🗣 Lapor Bos {m.from_user.mention}!
 
-🗃️ Music Dan Video Player UserBot
-
-🔰 Telegram UserBot Untuk Memutar Lagu Dan Video Di Obrolan Suara Telegram.
-
-👩‍💻 Dipersembahkan Oleh 
-• [Zaen](https://t.me/Mafia_TobaTZ)
-
-📝 Persyaratan
-• Python 3.8+
-• FFMPEG
-• Nodejs v16+
-
-[Repo Zaen-Music](https://github.com/Zaen-ubot/ZaenMusic)
-
-📝 Variabel Yang Dibutuhkan
-• `API_ID` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
-• `API_HASH` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
-• `SESSION` - Sesi String Pyrogram.
-• `SUDO_USER` - ID Akun Telegram Yang Digunakan Sebagai Admin
-• `HNDLR` - Handler untuk menjalankan userbot mu
+⚙ Barusan orang ini ngeklik tombol repo wkwkwkwk
 
 """
     await m.reply(REPO, disable_web_page_preview=True)
