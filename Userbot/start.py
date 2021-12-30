@@ -21,4 +21,4 @@ async def start_(client: Client, message: Message):
 
 💡 **Temukan semua perintah Bot dan cara kerjanya dengan mengklik tombol» 📚 Perintah!(https://t.me/ChannelBinary/14)**
 
-🔖 **Semua perintah dapat digunakan dengan: ;**
+🔖 **Semua perintah dapat digunakan dengan: ;**,
