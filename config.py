@@ -16,6 +16,9 @@ HNDLR = os.getenv("HNDLR", "!")
 SUDO_USERS = list(map(int, os.getenv("SUDO_USERS").split()))
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "ChannelBinary")
 
+# Fsubs #
+FORCESUB = getenv("FORCESUB", "BinarySupport") if getenv("FORCESUB", "BinarySupport") else None
+
 
 contact_filter = filters.create(
     lambda _, __, message: (message.from_user and message.from_user.is_contact)
