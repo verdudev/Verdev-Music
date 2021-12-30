@@ -22,7 +22,7 @@ from pytgcalls import (__version__ as pytover)
 async def start(client, m: Message):
       await m.reply(
         f"""✨ **Selamat datang {m.from_user.mention()} !**\n
-💭 [{ʙɪɴᴀʀʏ ᴍᴜsɪᴄ}](https://t.me/BinaryUserMusic) **Memungkinkan Anda memutar musik & video di grup melalui obrolan video Telegram!**
+💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Memungkinkan Anda memutar musik & video di grup melalui obrolan video Telegram!**
 
 💡 **Temukan semua perintah Bot dan cara kerjanya dengan mengklik » 📚 [Perintah!](https://t.me/ChannelBinary/38)**
 
