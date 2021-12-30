@@ -24,7 +24,7 @@ async def start(client, m: Message):
         f"""✨ **Selamat datang {m.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Memungkinkan Anda memutar musik & video di grup melalui obrolan video Telegram!**
 
-💡 **Temukan semua perintah Bot dan cara kerjanya dengan mengklik » 📚 [Perintah!](https://t.me/ChannelBinary/38)**
+💡 **Temukan semua perintah Bot dan cara kerjanya dengan mengklik » 📚 [Perintah!](https://t.me/ChannelBinary/48)**
 
 🔖 **Semua perintah dapat digunakan dengan » ; **
 """,
