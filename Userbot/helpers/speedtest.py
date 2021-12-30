@@ -18,7 +18,7 @@ def bytes(size: float) -> str:
     return "{:.2f} {}B".format(size, power_dict[t_n])
 
 
-@bot.on_message(filters.command("speedtest") & ~filters.edited)
+@Client.on_message(filters.command(["speedtest"], prefixes=f"{HNDLR}"))
 async def statsguwid(_, message):
     m = await message.reply_text("Menjalankan Tes Kecepatan ⚡")
     try:
