@@ -5,10 +5,8 @@ import wget
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from driver.veez import bot
-
 def bytes(size: float) -> str:
-    """humanize size"""
+    """Menyesuaikan Kecepatan"""
     if not size:
         return ""
     power = 1024
@@ -22,22 +20,22 @@ def bytes(size: float) -> str:
 
 @bot.on_message(filters.command("speedtest") & ~filters.edited)
 async def statsguwid(_, message):
-    m = await message.reply_text("Running Speed test")
+    m = await message.reply_text("Menjalankan Tes Kecepatan ⚡")
     try:
         test = speedtest.Speedtest()
         test.get_best_server()
-        m = await m.edit("Running Download SpeedTest")
+        m = await m.edit("Menjalankan Unduh 📥 Tes Kecepatan ")
         test.download()
-        m = await m.edit("Running Upload SpeedTest")
+        m = await m.edit("Menjalankan Unggah 📤 Tes Kecepatan")
         test.upload()
         test.results.share()
         result = test.results.dict()
     except Exception as e:
         return await m.edit(e)
-    m = await m.edit("Sharing SpeedTest Results")
+    m = await m.edit("Membagi Hasil Tes Kecepatan ⚡")
     path = wget.download(result["share"])
 
-    output = f"""**Speedtest Results**
+    output = f"""**Hasil Tes Kecepatan ⚡⚡**
     
 <u>**Client:**</u>
 **__ISP:__** {result['client']['isp']}
